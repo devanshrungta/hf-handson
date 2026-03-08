@@ -1,0 +1,30 @@
+$ python3 hf.py
+GitHub repo URL: https://github.com/devanshrungta/CD61004 
+Cloning repo...
+Reading repo...
+Generating markdown...
+Evaluating markdown...
+
+===== EVALUATION =====
+
+**Score:** **5 / 10**
+
+---
+
+## Strengths
+| ✅ | What works well |
+|---|-----------------|
+| **Clear project purpose** – The overview immediately tells the reader that the repo is a collection of Fortran MPI/OpenMP demos. |
+| **Feature list** – The “Key Features” section concisely enumerates the main scientific/parallel‑computing concepts covered. |
+| **Comprehensive file inventory** – Both *Folder Structure* and *Important Files* list every source file, making it easy to locate a program of interest. |
+| **High‑level description of paradigms** – The “How it Works” section explains the difference between the MPI and OpenMP examples and mentions the Monte‑Carlo and CO₂ distance calculations. |
+| **Future‑oriented suggestions** – The “Improvements” bullet list already points out useful next steps (testing, documentation, visualization, etc.). |
+
+---
+
+## Weaknesses
+| ❌ | Issue |
+|---|-------|
+| **Redundant sections** – “Folder Structure” and “Important Files” repeat the same information, wasting space and risking inconsistencies. |
+| **Spelling / naming errors** – `parralelize_oredered_output.f90`, `date.md`, `co2 parallel.f90` contain typos or spaces that break typical shell usage. |
+| **Missing *Getting Started* instructions** – No prerequisites (e.g., Fortran compiler, MPI library, OpenMP support), no build
