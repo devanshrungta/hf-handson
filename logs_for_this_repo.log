@@ -1,0 +1,28 @@
+$ python3 hf.py
+GitHub repo URL: https://github.com/devanshrungta/hf-handson
+Cloning repo...
+Reading repo...
+Generating markdown...
+Evaluating markdown...
+
+===== EVALUATION =====
+
+**Score:** **5 / 10**
+
+---
+
+## Strengths
+- **Clear high‑level overview** – Both files start with concise summaries of what the script does and what the repository contains.
+- **Logical sectioning** – The `hf.py` doc is split into *Key Features*, *How it Works*, and *Improvements*; the `repo_summary.md` uses *Project Overview*, *Key Features*, *Folder Structure*, and *Important Files*.
+- **Use of bullet points** – Makes it easy to skim the main capabilities and file list.
+- **Mention of future enhancements** – The `hf.py` doc already lists ideas for error handling, configurability, and customization.
+
+---
+
+## Weaknesses
+1. **Incomplete / Truncated content**  
+   - `repo_summary.md` ends abruptly (`co2 parallel.f9`) and omits the closing backticks and any concluding remarks.  
+   - Several file names contain typos or spacing errors (`parralelize_oredered_output.f90`, `co2 parallel.f90`).
+
+2. **Missing essential details**  
+   - No **installation** or **dependency** instructions (e.g., required

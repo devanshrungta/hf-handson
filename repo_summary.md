@@ -1,4 +1,31 @@
 ```markdown
+# FILE: hf.py
+```markdown
+# hf.py
+
+This Python script is designed to clone a GitHub repository, read its files, and generate structured Markdown documentation using Hugging Face's Inference API. It also evaluates the generated documentation using another Inference API.
+
+## Key Features
+- Clones a GitHub repository.
+- Reads specific file types (e.g., `.py`, `.md`, `.js`, `.ts`, `.json`, `.f90`) from the repository.
+- Generates structured Markdown documentation using a chat completion API.
+- Evaluates the generated documentation using a chat completion API.
+
+## How it Works
+1. **Cloning the Repository**: The `clone_repo` function clones the specified GitHub repository into a temporary directory.
+2. **Reading Repository Files**: The `read_repo_files` function reads the specified file types from the repository and concatenates their contents.
+3. **Generating Markdown Documentation**: The `generate_markdown` function uses a chat completion API to generate structured Markdown documentation based on the repository content.
+4. **Evaluating Markdown Documentation**: The `evaluate_markdown` function uses another chat completion API to evaluate the generated Markdown documentation.
+5. **Running the Pipeline**: The `run_pipeline` function orchestrates the entire process, including cloning the repository, reading files, generating documentation, and evaluating it.
+
+## Improvements
+- **Error Handling**: Add more robust error handling to manage potential issues during file reading and API requests.
+- **Configuration Flexibility**: Allow configuration of the chat completion API endpoints and models.
+- **Customization**: Provide options to customize the generated documentation format.
+```
+
+# FILE: repo_summary.md
+```markdown
 # Repository Documentation
 
 ## Project Overview
@@ -49,23 +76,4 @@ This repository contains a collection of Fortran programs designed to demonstrat
 - `pi_mc.f90`: Serial Monte Carlo method to estimate Pi.
 - `pi_mc_parallel.f90`: Parallel Monte Carlo method to estimate Pi using MPI.
 - `co2.f90`: Program to calculate intra-molecular distances for CO2 molecules.
-- `co2 parallel.f90`: MPI program to calculate intra-molecular distances for CO2 molecules.
-- `random.f90`: Serial program to read and sum random numbers.
-- `random_parallel.f90`: MPI program to read and sum random numbers.
-- `range.f90`: Program to calculate the range of a projectile for different angles.
-
-## How it Works
-- **MPI Programs**: These programs use the Message Passing Interface (MPI) to distribute tasks across multiple processes. They demonstrate various communication patterns such as broadcast, reduce, and barrier synchronization.
-- **OpenMP Programs**: These programs use OpenMP to parallelize tasks within a single process. They demonstrate features like parallel loops, critical sections, and reduction operations.
-- **Monte Carlo Pi Estimation**: Both serial and parallel implementations of the Monte Carlo method to estimate the value of Pi. The parallel version uses MPI to distribute the computation across multiple processes.
-- **Distance Calculations**: These programs calculate the intra-molecular distances for CO2 molecules, demonstrating data parallelism using both MPI and OpenMP.
-
-## Improvements
-- **Code Refactoring**: Simplify and optimize the code to improve readability and maintainability.
-- **Error Handling**: Add error handling to ensure robustness.
-- **Documentation**: Enhance documentation to provide clear explanations and usage instructions.
-- **Performance Tuning**: Optimize the performance of parallel programs by tuning parameters and using better algorithms.
-- **Testing**: Implement comprehensive testing to ensure the correctness and reliability of the programs.
-- **Visualization**: Add visualizations to demonstrate the scalability of the parallel programs.
-- **Community Contributions**: Encourage community contributions to improve and extend the functionality of the programs.
-```
+- `co2 parallel.f9
